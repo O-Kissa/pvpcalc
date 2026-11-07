@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "pvpcalc",
+  "version": "${version}",
+  "name": "PvPCalc",
+  "description": "Client-side PvP damage calculator and combat tracker with CSV match history.",
+  "authors": ["PvPCalc"],
+  "license": "MIT",
+  "icon": "assets/pvpcalc/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.pvpcalc.PvPCalcClient"]
+  },
+  "mixins": ["pvpcalc.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
